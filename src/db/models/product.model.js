@@ -25,6 +25,9 @@ const ProductSchema = {
     description: {
         type: DataTypes.STRING
     },
+    quantity: {
+        type: DataTypes.INTEGER
+    },
     createAt: {
         allowNull: false,
         type: DataTypes.DATE,
