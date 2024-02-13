@@ -1,13 +1,13 @@
-const ProductService = require('./../services/product.service')
+const UserService = require('./../services/user.service')
 
-const service = new ProductService
+const service = new UserService
 
-async function getAllProducts (req, res) {
+async function getUsers (req, res) {
     try {
-        const allProducts = await service.getAll()
+        const allUsers = await service.getAll()
         res.json({
             ok: true,
-            allProducts
+            allUsers
         })
     } catch (error) {
         console.error(error)
@@ -19,5 +19,5 @@ async function getAllProducts (req, res) {
 }
 
 module.exports = {
-    getAllProducts
+    getUsers
 }

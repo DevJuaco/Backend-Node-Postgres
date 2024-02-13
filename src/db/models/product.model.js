@@ -14,6 +14,10 @@ const ProductSchema = {
         type: DataTypes.STRING,
         field: 'name',
     },
+    urlImage: {
+        type: DataTypes.STRING,
+        field: 'url_image'
+    },
     price: {
         allowNull: false,
         type: DataTypes.DOUBLE,

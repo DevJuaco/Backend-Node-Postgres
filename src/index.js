@@ -8,6 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/api/products', require('./routes/products.routes'))
+app.use('/api/users', require('./routes/users.routes'))
 
 app.listen(PORT, () => {
     console.log(`server en el puerto ${PORT}`)
