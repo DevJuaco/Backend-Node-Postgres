@@ -6,6 +6,10 @@ class ProductService {
     async getAll() {
         return await models.Product.findAll()
     }
+
+    async getById(id) {
+        return await models.Product.findByPk(id)
+    }
 }
 
 module.exports = ProductService
